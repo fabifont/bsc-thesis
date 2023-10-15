@@ -1,0 +1,42 @@
+\begin{frame}{What is Browser Fingerprinting}
+  Browser Fingerprinting, also known as Device Fingerprinting, is a sophisticated method that allows websites and online services to collect and analyze specific data about a user's device without relying on traditional tracking techniques like cookies or IP addresses. 
+  When a user visits a website, their browser voluntarily shares certain configuration and setting details. 
+  A server can collate this information, resulting in a unique fingerprint for the user's device.
+\end{frame}
+
+\begin{frame}{Which data is collected}
+  \begin{itemize}
+    \item \textbf{Browser Info:} 
+    \begin{itemize}
+        \item User Agent, Plugins, HTTP Accept Headers
+        \item Cookie, Do Not Track, and Storage Settings
+        \item WebGL Renderer, Canvas Fingerprinting
+        \item WebRTC Leak, Navigator API Data
+        \item Ad Blockers, Performance, Errors Handling
+    \end{itemize}
+
+    \item \textbf{Device Info:}
+    \begin{itemize}
+        \item Screen Resolution, Color Depth, Available Fonts
+        \item Touch Support, Accelerometer, Gyroscope
+        \item Audio Stack, CPU, Memory, Platform
+    \end{itemize}
+
+    \item \textbf{Network \& Session:}
+    \begin{itemize}
+        \item Time Zone, Language, Battery Status API
+        \item Network Information, TLS/SSL Session IDs
+        \item Active Media Queries, Mouse \& Event Capabilities
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Browser Fingerprinting properties: uniqueness} 
+  It is highly improbable for two users to have identical fingerprints.
+  In fact, studies have suggested the uniqueness can be so specific that only one in several hundred thousand users might share the same fingerprint.
+\end{frame}
+
+\begin{frame}{Browser Fingerprinting properties: stateless}
+  Even if users disable cookies or use privacy-focused browsing modes, fingerprinting can still function, making it both challenging to detect and thwart.
+  Unlike cookies, this method is stateless, not relying on stored data in the browser, and hence, it leaves no obvious trace.
+\end{frame}
