@@ -1,23 +1,26 @@
 \begin{frame}{What is Browser Fingerprinting}
-  Browser Fingerprinting is a method that allows websites and online services to collect and analyze specific data about a user's device resulting in a unique fingerprint of it.
+  Browser Fingerprinting is a method that allows websites and online services to \textbf{collect} and \textbf{analyze} specific data about a user's device resulting in a \textbf{unique fingerprint} of it
   \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{images/fingerprint.png}
   \end{figure}
 \end{frame}
 
-\begin{frame}{Which data is collected}
+\begin{frame}{Collected data}
   \begin{itemize}
     \item \textbf{Browser info:} type, version, language, plugins, settings, \dots
-    \item \textbf{Device info:} os, gpu, screen size, fonts, battery info, \dots
-    \item \textbf{Network and Session info:} public ip, local ip, timezone, supported protocols and ciphers, \dots
+          \vspace{1cm}
+    \item \textbf{Device info:} OS, GPU, screen size, fonts, battery info, \dots
+          \vspace{1cm}
+    \item \textbf{Network and Session info:} public IP, local IP, VPN, timezone, supported protocols, \dots
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Browser Fingerprinting properties: uniqueness}
-  It is highly improbable for two users to have identical fingerprints.
-  In fact, studies have suggested the uniqueness can be so specific that only one in several hundred thousand users might share the same fingerprint.
-
+  \begin{itemize}
+    \item highly improbable for two users to have identical fingerprints
+    \item \textbf{uniqueness can be so specific} that only one in several hundred thousand users might share the same fingerprint
+  \end{itemize}
   \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{images/uniqueness.png}
@@ -25,7 +28,14 @@
 \end{frame}
 
 \begin{frame}{Browser Fingerprinting properties: stateless}
-  Even if users disable cookies, change IP or use privacy-focused browsing modes, fingerprinting can still function, making it both challenging to detect and thwart.
+  \vspace{-0.5cm}
+  Still works even if users:
+  \begin{itemize}
+    \item disable cookies
+    \item change IP
+    \item use privacy-focused browsing modes
+  \end{itemize}
+  \smallskip
   This method is stateless, not relying on stored data in the browser, and hence, it leaves no obvious trace.
 
   \begin{figure}

@@ -13,11 +13,12 @@
 \end{frame}
 
 \begin{frame}{How data is collected: Canvas fingerprinting}
-  The way an image or text is rendered on a canvas can vary based on the browser, OS, gpu, font rendering settings and anti-aliasing algorithms, resulting in a unique image.\\
-
-  Steps to generate a fingerprint from the canvas:
+  The way an image or text is rendered on a canvas can vary based on the browser, OS, GPU, font rendering settings and anti-aliasing algorithms, resulting in a unique image \\[1cm]
+  \noindent Steps to generate a fingerprint from the canvas:
+  \vspace{0.5cm}
   \begin{enumerate}
     \item get the image base64-encoded using \mintinline{javascript}{.toDataURL()}
+          \vspace{0.5cm}
     \item compute a hash of the string
   \end{enumerate}
 \end{frame}
@@ -64,8 +65,4 @@ ctx.fillText(txt, 4, 17);
             \includegraphics[width=\linewidth, scale=0.9]{images/webgl-image.png}
           \end{figure}
   \end{itemize}
-\end{frame}
-
-\begin{frame}{How data is collected: TLS fingerprinting}
-
 \end{frame}
