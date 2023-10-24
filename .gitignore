@@ -1,5 +1,4 @@
-*.aux
+build/*
+!build/index.pdf
+
 *.log
-*.nav
-*.out
-*.toc

@@ -1,12 +1,52 @@
 \documentclass{beamer}
 \usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage{animate}
+\usepackage{biblatex}
 
+\setbeamertemplate{caption}[numbered]
 \setbeamertemplate{footline}[frame number]
+\setbeamertemplate{navigation symbols}{}
+
+\addbibresource{references.bib}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \pertype{article}
+      \pertype{inproceedings}
+      \step[fieldset=presort, fieldvalue={a}]
+    }
+    \map{
+      \pertype{misc}
+      \step[fieldset=presort, fieldvalue={b}]
+    }
+  }
+}
 
 \title{Introduction to Browser Fingerprinting}
-\author[Fabio Fontana]{Fabio Fontana \\ {\small Supervisor: Prof.~Marina Ribaudo}}
+\author[Fabio Fontana]{Candidate: Fabio Fontana \\ {\small Supervisor: Marina Ribaudo}}
 \institute{University of Genoa}
-\date{2023}
+\titlegraphic{\includegraphics[width=0.08\textwidth]{images/unige.png}}
+\date{Academic Year 2022/2023}
+
+\setbeamertemplate{title page}{
+    \begin{minipage}[c][\paperheight]{\textwidth}
+        \vspace*{2cm}
+        \centering
+        % Title
+        {\usebeamercolor[fg]{structure}\linespread{1.5}\Huge \inserttitle}\par
+        \vspace*{0.5cm}
+        % Author
+        {\Large \insertauthor}\par
+        \vspace*{0.5cm}
+        % Title graphic (Logo)
+        \inserttitlegraphic\par
+        % Institute and Date
+        {\tiny \insertinstitute \\ \insertdate}\par
+    \end{minipage}
+}
 
 \begin{document}
 \frame{\titlepage}
